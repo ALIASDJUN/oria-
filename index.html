@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIA - Agence de Communication 360°</title>
+
+    <!-- Liens Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+</head>
+<body>
+
+    <!-- Inclusion de la barre de navigation -->
+    <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <!-- Logo à gauche -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/a.png" alt="ORIA Logo" class="img-fluid" style="max-width: 100px;">
+                </a>
+
+                <!-- Bouton mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Liens centrés -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link btn btn-outline-warning mx-2" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-warning mx-2" href="apropo.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-warning mx-2" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-outline-warning mx-2" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bouton "Contactez-nous" à droite -->
+                <div class="ms-auto">
+                    <a href="contact.html" class="btn btn-warning">Contactez-nous</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Inclusion de l'en-tête -->
+    <div id="header">
+        <header class="hero-section d-flex align-items-center justify-content-center">
+            <div class="overlay"></div>
+            <div class="container text-center text-white position-relative">
+                <h1 class="display-4 fw-bold">Bienvenue chez ORIA</h1>
+                <p class="lead">Agence de communication 360° pour booster votre image.</p>
+                <a href="#services" class="btn btn-warning btn-lg">Découvrir nos services</a>
+            </div>
+        </header>
+    </div>
+
+    <!-- Inclusion du pied de page -->
+    <div id="footer">
+        <footer class="footer bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Section avec les icônes de réseaux sociaux -->
+                    <div class="col-12 text-center">
+                        <div class="social-icons mb-3">
+                            <a href="#" class="text-white mx-3">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-white mx-3">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                            <a href="#" class="text-white mx-3">
+                                <i class="fab fa-x-twitter fa-2x"></i>
+                            </a>
+                            <a href="mailto:contact@oria.com" class="text-white mx-3">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>
+                            <a href="tel:+2290000000" class="text-white mx-3">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center py-3 bg-secondary">
+                <p class="mb-0">© ORIA GROUPE 2024 - Tous droits réservés</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Icône de support flottante -->
+    <a href="support.html" class="support-icon">
+        <i class="fas fa-headset"></i>
+    </a>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

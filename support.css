@@ -1,0 +1,95 @@
+/* Styles pour la page de support */
+#supportForm {
+    background-color: #000; /* Fond noir */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 193, 7, 0.2); /* Ombre jaune */
+    position: relative; /* Nécessaire pour les pseudo-éléments */
+    overflow: hidden; /* Cache les débordements de l'animation */
+}
+
+#supportForm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        #ffc107,
+        transparent,
+        #ffc107,
+        transparent
+    );
+    animation: borderAnimation 4s linear infinite;
+    z-index: 0; /* Place l'élément derrière le formulaire */
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); /* Masque pour les bords */
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); /* Masque pour les bords (support WebKit) */
+    mask-composite: exclude; /* Exclut le contenu du masque */
+    -webkit-mask-composite: xor; /* Exclut le contenu du masque (support WebKit) */
+    padding: 2px; /* Épaisseur de la bordure */
+}
+
+/* Animation pour le cadre */
+@keyframes borderAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#supportForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff; /* Texte blanc */
+}
+
+#supportForm input,
+#supportForm textarea {
+    background-color: #343a40; /* Fond gris foncé */
+    border: 1px solid #555; /* Bordure grise */
+    color: #fff; /* Texte blanc */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    position: relative; /* Assure que les champs sont au-dessus de l'animation */
+    z-index: 1; /* Place les champs au-dessus du pseudo-élément */
+}
+
+#supportForm input:focus,
+#supportForm textarea:focus {
+    border-color: #ffc107; /* Bordure jaune au focus */
+    box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Ombre jaune */
+}
+
+#supportForm button {
+    background-color: #ffc107; /* Bouton jaune */
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    position: relative; /* Assure que le bouton est au-dessus de l'animation */
+    z-index: 1; /* Place le bouton au-dessus du pseudo-élément */
+}
+
+#supportForm button:hover {
+    background-color: #e0a800; /* Bouton jaune foncé au survol */
+}
+
+/* Icônes */
+#supportForm .fa-user,
+#supportForm .fa-envelope,
+#supportForm .fa-tag,
+#supportForm .fa-comment {
+    color: #ffc107; /* Couleur jaune pour les icônes */
+}
+.fw-bold{
+    color: #e0a800;
+}

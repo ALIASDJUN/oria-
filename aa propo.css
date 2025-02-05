@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.A {
+    background-color: #ffa600;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espace entre l'image et le texte */
+}
+
+.about-image {
+    width: 100px; /* Ajuste la largeur de l'image */
+    height: auto; /* Garde les proportions de l'image */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.main-content {
+    flex: 1 0 auto;
+    background-color: #fff7e6;
+}
+
+.content-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.content-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.signature {
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+footer {
+    flex-shrink: 0;
+    margin-top: auto;
+}

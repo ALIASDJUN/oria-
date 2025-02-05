@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez Oria</title>
+    <!-- Liens Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css"> <!-- Lien vers ton fichier CSS -->
+</head>
+<body>
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Contactez Oria</h1>
+            <p class="lead">Nous sommes à votre disposition pour discuter de vos projets de communication et répondre à toutes vos questions.</p>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <form action="#" method="POST" class="contact-form">
+            <div class="mb-3">
+                <label for="nom" class="form-label">
+                    <i class="fas fa-user me-2 text-warning"></i>Nom :
+                </label>
+                <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">
+                    <i class="fas fa-envelope me-2 text-warning"></i>Email :
+                </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="exemple@domain.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="tel" class="form-label">
+                    <i class="fas fa-phone me-2 text-warning"></i>Téléphone :
+                </label>
+                <input type="tel" id="tel" name="tel" class="form-control" placeholder="0123456789" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">
+                    <i class="fas fa-comment me-2 text-warning"></i>Votre message :
+                </label>
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Expliquez votre projet ou posez votre question ici..." required></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-warning btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Envoyer
+                </button>
+            </div>
+        </form>
+
+        <div class="text-center mt-4">
+            <p>Retournez à la <a href="index.html" class="text-warning">page principale</a>.</p>
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

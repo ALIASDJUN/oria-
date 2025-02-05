@@ -1,0 +1,94 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section (Arrière-plan) */
+.hero-section {
+    background-image: url(images/photo_2025-02-04_12-18-21.jpg); /* Remplace par ton image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay sombre */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Barre de navigation */
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link.btn {
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* Pied de page */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffc107; /* Couleur jaune au survol */
+}
+
+.footer .bg-secondary {
+    background-color: #c38509 !important;
+}
+/* Icône de support flottante */
+.support-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffc107; /* Couleur jaune */
+    color: #000; /* Couleur noire pour l'icône */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Forme ronde */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-decoration: none; /* Supprime le soulignement du lien */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000; /* Assure que l'icône est au-dessus des autres éléments */
+}
+
+.support-icon:hover {
+    background-color: #e0a800; /* Couleur jaune foncé au survol */
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
